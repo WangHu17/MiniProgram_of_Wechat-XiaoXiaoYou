@@ -1,0 +1,50 @@
+<!--pages/act1/act1.wxml-->
+
+<view class='selecttime'>
+  <view class='content-time'>
+    <text >填写活动地点</text>
+  </view>
+  <view class='content-time2'>
+    <text >活动地点越详细越方便找到哦</text>
+  </view>
+</view>
+<form bindsubmit='bindFormSubmit'>
+  <view class='input'>
+    <view class='title' catchtap='selectSchool'>
+      <icon class='iconfont icon-xuexiao iconstyle'></icon>
+      <text>所属学校</text>
+      <text class="start-date">{{user_school}}</text>
+      <view class='triangle'></view>
+    </view>
+    <view class='title'>
+      <icon class='iconfont icon-ditu iconstyle'></icon>
+      <text>活动地点</text>
+      <view class='act-input'>
+        <input name="activity_area" placeholder='请描述详细地址'></input>
+      </view>
+    </view>
+  </view>
+  <button class='submit_activity' form-type='submit'>下一步</button>
+</form>
+
+
+
+
+
+
+<view class='container' wx:if="{{loading}}">
+  <view class="sk-circle">
+    <view class="sk-circle1 sk-child"></view>
+    <view class="sk-circle2 sk-child"></view>
+    <view class="sk-circle3 sk-child"></view>
+    <view class="sk-circle4 sk-child"></view>
+    <view class="sk-circle5 sk-child"></view>
+    <view class="sk-circle6 sk-child"></view>
+    <view class="sk-circle7 sk-child"></view>
+    <view class="sk-circle8 sk-child"></view>
+    <view class="sk-circle9 sk-child"></view>
+    <view class="sk-circle10 sk-child"></view>
+    <view class="sk-circle11 sk-child"></view>
+    <view class="sk-circle12 sk-child"></view>
+  </view>
+</view>

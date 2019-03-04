@@ -1,0 +1,81 @@
+<!--pages/act2/act2.wxml-->
+
+<view class='selecttime'>
+  <view class='content-time'>
+    <text>填写活动标题和封面</text>
+  </view>
+  <view class='content-time2'>
+    <text>越美的封面吸引更多的伙伴</text>
+  </view>
+
+</view>
+
+<form bindsubmit='bindFormSubmit'>
+  <view class='content'>
+    <view class='act-img' bindtap='doUpload' wx:if="{{!haschooseimg}}">
+      <icon class='actimg iconfont icon-fabiao'></icon>
+      <text class='img-content'>添加活动图片</text>
+      <text class='img-content'>(最多上传1张)</text>
+    </view>
+    <view wx:else>
+      <image src='{{imgUrl}}' class='localImg'></image>
+    </view>
+    <view class='input'>
+      <view class='title'>
+        <icon class='iconfont icon-biaoti1 iconstyle'></icon>
+        <text>活动标题</text>
+        <view class='act-input'>
+          <input name="activity_title" type='text' placeholder='不超过15个字' maxlength='15'></input>
+        </view>
+      </view>
+      <view class='title' bindtap='actIntroduce1'>
+        <icon class=' iconstyle iconfont icon-icon168 '></icon>
+        <text>活动详情</text>
+        <view class="triangle {{introduce1 ? 'active-intro' : ''}}"></view>
+      </view>
+      <view class="{{introduce1 ? 'introduce-show' : 'introduce-none'}}">
+        <view class='introduce-content'>
+          <textarea name="activity_introduce" class='text-introduce' placeholder='详细活动内容包括但不限于学校近期活动，你认为有价值的课程或者其他校园活动(是否提供住宿，是否有门禁)' maxlength='-1'></textarea>
+        </view>
+      </view>
+      <view class='title'>
+        <icon class='iconfont icon-huodongfeiyong iconstyle'></icon>
+        <text>活动预算</text>
+        <view class='act-input'>
+          <input name="activity_money" type='digit' placeholder='' maxlength='4'></input>
+        </view>
+        <icon class='iconfont icon-newbimoney iconstyle'></icon>
+      </view>
+      <view class='title'>
+        <icon class='iconfont icon-huodongfeiyong iconstyle'></icon>
+        <text>带领费用</text>
+        <view class='act-input'>
+          <input name="activity_leader_money" type='digit' placeholder='' maxlength='4'></input>
+        </view>
+        <icon class='iconfont icon-newbimoney iconstyle'></icon>
+      </view>
+    </view>
+  </view>
+  <button class='submit_activity' form-type='submit'>下一步</button>
+</form>
+
+
+
+
+
+<view class='container' wx:if="{{loading}}">
+  <view class="sk-circle">
+    <view class="sk-circle1 sk-child"></view>
+    <view class="sk-circle2 sk-child"></view>
+    <view class="sk-circle3 sk-child"></view>
+    <view class="sk-circle4 sk-child"></view>
+    <view class="sk-circle5 sk-child"></view>
+    <view class="sk-circle6 sk-child"></view>
+    <view class="sk-circle7 sk-child"></view>
+    <view class="sk-circle8 sk-child"></view>
+    <view class="sk-circle9 sk-child"></view>
+    <view class="sk-circle10 sk-child"></view>
+    <view class="sk-circle11 sk-child"></view>
+    <view class="sk-circle12 sk-child"></view>
+  </view>
+</view>

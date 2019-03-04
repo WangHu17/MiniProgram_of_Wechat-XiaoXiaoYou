@@ -1,0 +1,40 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.94",
+	"appid": "wx0406121d7ed452db",
+	"projectname": "%E6%A0%A1%E6%A0%A1%E6%B8%B83",
+	"svr": "./server",
+	"client": "./client",
+	"qcloudRoot": "./server",
+	"miniprogramRoot": "./client",
+	"pluginRoot": "",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": []
+		}
+	}
+}

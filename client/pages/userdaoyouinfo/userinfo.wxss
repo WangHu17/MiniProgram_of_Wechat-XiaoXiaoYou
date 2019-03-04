@@ -1,0 +1,89 @@
+/* pages/userinfo/userinfo.wxss */
+.picture{
+  width: 100%;
+  height: 32vh;
+  background-color: #FFA488;
+}
+.tx{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  border: 2rpx solid white;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 60rpx;
+}
+.name_box{
+  height: 60rpx;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 40rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+.name{
+  color: white;
+  font-size: 30rpx;
+}
+.box{
+  width: 100%;
+  height: 90rpx;
+  border-bottom: 2rpx solid #DDDDDD;
+  line-height: 90rpx;
+  display: flex;
+  position: relative;
+}
+.words{
+  color: #FFA488;
+  font-size: 30rpx;
+  margin-left: 7%;
+}
+.information{
+  color: gray;
+  font-size: 28rpx;
+  margin-left: 7%;
+}
+.memo {
+  width: 500rpx;
+  height: 90rpx;
+}
+.content {
+  font-size: 30rpx;
+  color: #FFA488;
+  position: absolute;
+  right: 30rpx;
+  height: 90rpx;
+}
+button::after {
+  border: 0;
+}
+button {
+  background: white;
+}
+.clear {
+  width: 200rpx;
+  height: 50rpx;
+  background: #FFA488;
+  border-radius: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%,5%);
+}
+.cleacontent {
+  position: absolute;
+  top: -30%;
+  left: 15%;
+}
+.xx{
+  font-size: 30rpx;
+  display: inline-flex;
+  margin-left: 7%;
+  zoom: 75%;
+}
+.nv{
+  margin-left: 50rpx;
+}

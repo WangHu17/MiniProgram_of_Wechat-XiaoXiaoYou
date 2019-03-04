@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 664376 */
+  src: url('//at.alicdn.com/t/font_664376_uxqbtyf8d0r7ldi.eot');
+  src: url('//at.alicdn.com/t/font_664376_uxqbtyf8d0r7ldi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_664376_uxqbtyf8d0r7ldi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_664376_uxqbtyf8d0r7ldi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_664376_uxqbtyf8d0r7ldi.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dianzan:before {content: "\e618"}
+.icon-shoucang:before {content: "\e612"}
+.icon-share:before {content:"\e6ba"}
+.icon-qq:before{content:"\e609"}
+.icon-zhuyi:before {content:"\e67c"}
+.icon-huodong:before{content:"\e608"}
+.icon-ren:before{content:"\e666"}
+.icon-sex:before{content:"\e6b1"}
+.icon-phone:before{content:"\e601"}
+.icon-date:before{content:"\e6da"}
+.icon-beizhu:before{content:"\e662"}
+.icon-school:before{content:"\e660"}
+.icon-ID:before{content:"\e6a6"}
+.icon-actived:before{content:"\e606"}
+.icon-booked:before{content:"\e63c"}

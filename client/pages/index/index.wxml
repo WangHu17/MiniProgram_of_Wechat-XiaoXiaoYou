@@ -1,0 +1,117 @@
+<!--pages/index/index.wxml-->
+<!-- 定位 -->
+<view class='position'>
+  <navigator url='/pages/switchcity/switchcity?' open-type='navigate' hover-class='none'>
+    <view class='pos-left'>
+      <icon class='iconfont icon-ditu ditu'></icon>
+      <text class="city">{{location}}</text>
+    </view>
+  </navigator>
+  <view class='pos-middle' catchtap='searchact'>
+    <image src='../../images/sousuo.png' class='pos-middle-search'></image>
+    <text class='pos-middle-content'>搜索你想去的学校</text>
+  </view>
+  <view class='pos-right' catchtap='instruction'>
+    <icon class='iconfont icon-yonghuxuzhi yonghuxuzhi'></icon>
+    <text class='read'>用户须知</text>
+  </view>
+</view>
+<!-- 定位结束 -->
+
+<!-- 精选 -->
+<view class='jingxuan'>
+  <swiper autoplay="{{true}}" interval="{{interval}}" duration="{{duration}}" circular='{{true}}' current="{{currentSwiper}}" class='swiper-box' indicator-dots='{{true}}'>
+    <view wx:for="{{imgUrls}}" wx:key="" >
+      <swiper-item>
+        <image src="{{item}}" class='slide-image' />
+      </swiper-item>
+    </view>
+  </swiper>
+</view>
+<!-- 精选结束 -->
+
+<!-- 热门推荐 -->
+<view class='recommendfresh'>
+  <icon class='iconfont icon-remen'></icon>
+  <icon class='iconfont icon-rementuijian'></icon>
+  <text class='more' catchtap='lookall1'>浏览全部</text>
+</view>
+
+<block wx:for="{{hotRecommend}}" wx:key="">
+  <view class='cityactivity' data-hotact-id='{{item.activity_id}}' catchtap='hotrecommend'>
+    <view class='city-activity'>
+      <text class='ranknumber'>{{rank[index]}}</text>
+      <view class='rank rank{{rank[index]}}'></view>
+      <view class='city-left-img'>
+        <image src='{{item.imgUrl}}' class='city-left-img-size'></image>
+      </view>
+      <view class='city-activity-right'>
+        <view class='city-right-top'>
+          <text>{{item.activity_title}}</text>
+        </view>
+        <view class='city-right-middle'>
+          <view class='city-right-middle-school'>
+            <text>{{item.user_school}}</text>
+          </view>
+        </view>
+        <view class='city-right-bottom'>
+          <view class='city-right-middle-time'>
+            <text>{{item.activity_start_date}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+<!-- 热门推荐结束 -->
+
+
+<!-- 本市学校的活动 -->
+<view class='select-act-city'>
+  <icon class='iconfont icon-remen'></icon>
+  <text class='localact'>本市活动</text>
+  <text class='more' catchtap='lookall2'>浏览全部</text>
+</view>
+<view class='recommend'>
+  <block wx:for="{{recommend}}" wx:key="">
+    <view class='hot-recommend' data-act-id='{{item.activity_id}}' catchtap='recommend'>
+      <image src='{{item.imgUrl}}' class='recommend_hot_img'></image>
+      <view class='content'>
+        <text>{{item.activity_title}}</text>
+      </view>
+      <view class='district'>
+        <text class='where'>{{item.user_school}}</text>
+      </view>
+      <view>
+        <text class='where'>{{item.activity_start_date}}</text>
+      </view>
+    </view>
+  </block>
+</view>
+<!-- 本市学校活动部分结束 -->
+<view>
+  <text class='bottom-line'>哎呀，到底了</text>
+  <view class='space'></view>
+</view>
+
+
+
+
+
+
+<view class='container' wx:if="{{loading}}">
+  <view class="sk-circle">
+    <view class="sk-circle1 sk-child"></view>
+    <view class="sk-circle2 sk-child"></view>
+    <view class="sk-circle3 sk-child"></view>
+    <view class="sk-circle4 sk-child"></view>
+    <view class="sk-circle5 sk-child"></view>
+    <view class="sk-circle6 sk-child"></view>
+    <view class="sk-circle7 sk-child"></view>
+    <view class="sk-circle8 sk-child"></view>
+    <view class="sk-circle9 sk-child"></view>
+    <view class="sk-circle10 sk-child"></view>
+    <view class="sk-circle11 sk-child"></view>
+    <view class="sk-circle12 sk-child"></view>
+  </view>
+</view>

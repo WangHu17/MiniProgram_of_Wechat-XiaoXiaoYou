@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/instruction/instruction",
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/index2/index",
+    "pages/leader/leader",
+    "pages/userdaoyouinfo/userinfo",
+    "pages/reservation/reservation",
+    "pages/act2/act2",
+    "pages/feedBack/feedBack",
+    "pages/act3/act3",
+    "pages/act1/act1",
+    "pages/nologin/nologin",
+    "pages/schoolList/schoolList",
+    "pages/history/history",
+    "pages/setting/setting",
+    "pages/switchcity/switchcity",
+    "pages/school/school",
+    "pages/booked/booked",
+    
+    "pages/yuyue/yuyue",
+    "pages/act_detail/act_detail",
+    "pages/guides-data/guide",
+    "pages/visitors-data/visitor",
+    "pages/more1/more1",
+    "pages/more2/more2",
+    "pages/useryuyueinfo/userinfo",
+    "pages/search/search"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/shouye0.png",
+        "selectedIconPath": "/images/shouye.png"
+      },
+      {
+        "pagePath": "pages/act1/act1",
+        "text": "发布",
+        "iconPath": "/images/fabu0.png",
+        "selectedIconPath": "/images/fabu.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/login.png",
+        "selectedIconPath": "/images/login0.png"
+      }
+    ]
+  }
+}

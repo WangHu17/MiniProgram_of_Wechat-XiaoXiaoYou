@@ -1,0 +1,167 @@
+<view class='view0'>
+  <image class='tp1' src='/images/1.jpg'></image>
+
+  <view class='view1'>
+    <image class='tp2' src='/images/2.png'></image>
+    <text class='text1'>Follow The Leader</text>
+    <text class='text2'>around the campus</text>
+  </view>
+
+  <view class='view2'>
+    <text class='text3'>{{schoolList[params_id].schoolDetail.schoolTitle}}</text>
+  </view>
+
+  <view class='hdp'>
+    <swiper class='hdp1' autoplay='{{true}}' circular='{{true}}' interval='{{3000}}' duration='{{0}}'>
+      <swiper-item wx:for="{{schoolList[params_id].hdpList}}" wx:key="">
+        <image src='{{item.imagePath}}' class='tp3'></image>
+      </swiper-item>
+    </swiper>
+    <view class='sjx'></view>
+    <view class='cfx1'></view>
+    <view class='cfx2'></view>
+    <view class='sjx1'></view>
+    <view class='sjx2'></view>
+  </view>
+
+  <view class='view3'>
+    <image src='/images/4.png' class='tp4'></image>
+    <text class='text4'>学校信息</text>
+    <text class='text5' space='emsp'>
+{{schoolList[params_id].schoolDetail.schoolMessage}}
+(地址):</text>
+    <text class='text6' space="ensp">
+        {{schoolList[params_id].schoolDetail.schoolEara}}
+    </text>
+  </view>
+
+  <view class='view4'>
+    <image src='/images/3.png' class='tp5'></image>
+
+    <text class='text7'>日程活动(望江)</text>
+
+    <view class='view5'>
+      <text class='text8'>校园景区</text>
+    </view>
+    <view class='view5 view-5'>
+      <text class='text8'>精选课程</text>
+    </view>
+    <view class='sjx3'></view>
+    <view class='sjx3 sjx4'></view>
+    <text class='text9'>XXY</text>
+    <text class='text12'>XXY</text>
+    <text class='text13'>XXY</text>
+    <text class='text14'>XXY</text>
+
+    <image class='tp6' src='/images/1.png'></image>
+    <image class='tp9' src='/images/1.png'></image>
+    <image class='tp10' src='/images/1.png'></image>
+    <image class='tp11' src='/images/1.png'></image>
+
+    <block wx:for="{{schoolList[params_id].activityList}}" wx:key="">
+      <view class='view-z view{{item.number}}' bindtap='activity' data-activity-id='{{item.id}}'>
+        <image class='tp7' src='{{item.imagePath}}'></image>
+        <text class='text10'>{{item.name}}</text>
+        <icon class='iconfont icon-dianzan'></icon>
+        <icon class='iconfont icon-share'></icon>
+      </view>
+    </block>
+    <view class='yq yq1'></view>
+    <view class='yq yq2'></view>
+    <view class='yq yq3'></view>
+    <view class='yq yq4'></view>
+
+    <view class='yq yq5'></view>
+    <view class='yq yq6'></view>
+    <view class='yq yq7'></view>
+    <view class='yq yq8'></view>
+
+    <view class='sx sx1'></view>
+    <view class='sx sx2'></view>
+    <view class='sx sx3'></view>
+    <view class='sx sx4'></view>
+    <view class='sx sx5'></view>
+
+    <view class='sx sx6'></view>
+    <view class='sx sx7'></view>
+    <view class='sx sx8'></view>
+    <view class='sx sx9'></view>
+
+    <view class='hx hx1'></view>
+    <view class='hx hx2'></view>
+    <view class='hx hx3'></view>
+    <view class='hx hx4'></view>
+    <view class='hx hx5'></view>
+    <view class='hx hx6'></view>
+
+    <view class='hx hx7'></view>
+    <view class='hx hx8'></view>
+    <view class='hx hx9'></view>
+    <view class='hx hx10'></view>
+    <view class='hx hx11'></view>
+    <view class='hx hx12'></view>
+  </view>
+
+  <view class='viewBottom'>
+
+    <view bindtap='toggleFav'>
+      <icon wx:if="{{!favFlag}}" class='iconfont icon-shoucang'></icon>
+      <icon wx:else class='iconfont icon-shoucang icon-actived'></icon>
+      <text class='text15'>收藏</text>
+    </view>
+
+    <button class='shareButton' open-type='share'>
+      <icon class='iconfont icon-share1'></icon>
+      <text class='text16'>分享</text>
+    </button>
+
+    <view class='viewYK' bindtap='YKxx'>
+      <text class='text17'>我要做游客</text>
+    </view>
+
+    <view class='viewDY' bindtap='DYxx'>
+      <text class='text17'>我要做导游</text>
+    </view>
+  </view>
+
+  <view class='booked0'>
+    <view class='booked1'>
+      <text class='ybm'>已报名{{joined.length}}</text>
+    </view>
+  </view>
+
+  <view class='booked'>
+    <block wx:for="{{joined}}" wx:key="">
+      <view class='bmk'>
+        <image class='tx' src='{{item.imgurl}}'></image>
+        <text class='booked_name'>{{item.name}}</text>
+      </view>
+    </block>
+    <image src='/images/23.jpg' class='more' bindtap='morebooked'></image>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+<view class='container' wx:if="{{loading}}">
+  <view class="sk-circle">
+    <view class="sk-circle1 sk-child"></view>
+    <view class="sk-circle2 sk-child"></view>
+    <view class="sk-circle3 sk-child"></view>
+    <view class="sk-circle4 sk-child"></view>
+    <view class="sk-circle5 sk-child"></view>
+    <view class="sk-circle6 sk-child"></view>
+    <view class="sk-circle7 sk-child"></view>
+    <view class="sk-circle8 sk-child"></view>
+    <view class="sk-circle9 sk-child"></view>
+    <view class="sk-circle10 sk-child"></view>
+    <view class="sk-circle11 sk-child"></view>
+    <view class="sk-circle12 sk-child"></view>
+  </view>
+</view>

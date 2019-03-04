@@ -1,0 +1,81 @@
+<!--pages/userinfo/userinfo.wxml-->
+<view class='picture'>
+  <image src='{{avatarUrl}}' class='tx'></image>
+  <view class='name_box'>
+    <text class='name'>{{userInfo.name}}</text>
+  </view>
+</view>
+
+
+
+<form bindsubmit='submit'>
+  <view class='box'>
+    <text class='words'>姓名:</text>
+    <input wx:if="{{hasbianji}}" name="name" class='information memo' placeholder='{{userInfo.name}}' value='{{userInfo.name}}'></input>
+    <text wx:else class='information'>{{userInfo.name}}</text>
+  </view>
+  <view class='box'>
+    <text class='words'>性别:</text>
+    <radio-group class='xx' bindchange="usersex">
+      <radio value='1' checked='{{userInfo.gender == 1}}' disabled="{{!hasbianji}}">男</radio>
+      <radio class='nv' value='0' checked='{{userInfo.gender == 0}}' disabled="{{!hasbianji}}">女</radio>
+    </radio-group>
+  </view>
+  <view class='box'>
+    <text class='words'>手机:</text>
+    <input wx:if="{{hasbianji}}" name="phone" class='information memo' placeholder='{{userInfo.phonenumber}}' value='{{userInfo.phonenumber}}'></input>
+    <text wx:else class='information'>{{userInfo.phonenumber}}</text>
+  </view>
+
+  <view class='box'>
+    <text class='words'>学号:</text>
+    <input wx:if="{{hasbianji}}" name="studentId" class='information memo' placeholder='{{userInfo.studentId}}' value='{{userInfo.studentId}}'></input>
+    <text wx:else class='information'>{{userInfo.studentId}}</text>
+  </view>
+
+  <view class='box'>
+    <text class='words'>学校:</text>
+    <input wx:if="{{hasbianji}}" name="school" class='information memo' placeholder='{{userInfo.school}}' value='{{userInfo.school}}'></input>
+    <text wx:else class='information'>{{userInfo.school}}</text>
+  </view>
+
+  <view class='box'>
+    <text class='words'>QQ:</text>
+    <input wx:if="{{hasbianji}}" name="qq" class='information memo' placeholder='{{userInfo.QQ}}' value='{{userInfo.QQ}}'></input>
+    <text wx:else class='information'>{{userInfo.QQ}}</text>
+  </view>
+
+
+  <view class='box'>
+    <text class='words'>备注:</text>
+    <input wx:if="{{hasbianji}}" name="memo" class='information memo' placeholder='{{userInfo.memo}}' value='{{userInfo.memo}}'></input>
+    <text wx:else class='information'>{{userInfo.memo}}</text>
+  </view>
+
+
+
+
+  <button wx:if="{{!hasbianji}}" class='clear' catchtap='refresh'>
+    <text class='cleacontent'>编辑资料</text>
+  </button>
+  <button wx:else class='clear' form-type='submit'>
+    <text class='cleacontent'>完成修改</text>
+  </button>
+</form>
+
+<view class='container' wx:if="{{loading}}">
+  <view class="sk-circle">
+    <view class="sk-circle1 sk-child"></view>
+    <view class="sk-circle2 sk-child"></view>
+    <view class="sk-circle3 sk-child"></view>
+    <view class="sk-circle4 sk-child"></view>
+    <view class="sk-circle5 sk-child"></view>
+    <view class="sk-circle6 sk-child"></view>
+    <view class="sk-circle7 sk-child"></view>
+    <view class="sk-circle8 sk-child"></view>
+    <view class="sk-circle9 sk-child"></view>
+    <view class="sk-circle10 sk-child"></view>
+    <view class="sk-circle11 sk-child"></view>
+    <view class="sk-circle12 sk-child"></view>
+  </view>
+</view>

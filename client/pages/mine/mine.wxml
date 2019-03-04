@@ -1,0 +1,100 @@
+<!--pages/mine/mine.wxml-->
+<!-- 顶部 -->
+<view class='container' wx:if="{{loading}}">
+  <view class="sk-circle">
+    <view class="sk-circle1 sk-child"></view>
+    <view class="sk-circle2 sk-child"></view>
+    <view class="sk-circle3 sk-child"></view>
+    <view class="sk-circle4 sk-child"></view>
+    <view class="sk-circle5 sk-child"></view>
+    <view class="sk-circle6 sk-child"></view>
+    <view class="sk-circle7 sk-child"></view>
+    <view class="sk-circle8 sk-child"></view>
+    <view class="sk-circle9 sk-child"></view>
+    <view class="sk-circle10 sk-child"></view>
+    <view class="sk-circle11 sk-child"></view>
+    <view class="sk-circle12 sk-child"></view>
+  </view>
+</view>
+
+<view class='top' wx:if="{{hasUserInfo == false && canIUse}}">
+  <view class='user-info login' wx:if="{{hasUserInfo == false && canIUse}}">
+    <view class='login-top'>
+      <button hover-class='none' open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        <image src='/images/login.png' style='width:128rpx;height:128rpx;'></image>
+      </button>
+    </view>
+    <view class='login-bottom'>
+      <button hover-class='none' class='button_login' open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        Hi~欢迎登录</button>
+    </view>
+  </view>
+</view>
+
+<view class='top' wx:if="{{hasUserInfo == true }}">
+  <view class='user-info'>
+    <view class='user-top'>
+      <open-data type="userAvatarUrl" class="userinfo-avatar" style="borde-radius:50%"></open-data>
+    </view>
+    <view class="nickname">
+      <view class='userinfo-nickname'>
+        <open-data type="userNickName" lang="zh_CN"></open-data>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+<view class='mine' catchtap='setting'>
+  <view class='mine-left'>
+    <image src='/images/wodefabu.png' class='mineicon'></image>
+  </view>
+  <view class='mine-right'>
+    <text class='content'>我的发布</text>
+  </view>
+  <view class='triangle'></view>
+</view>
+
+<view class='mine' catchtap='history'>
+  <view class='mine-left'>
+    <image src='/images/shoucang.png' class='mineicon' style='width:90rpx;height:90rpx;'></image>
+  </view>
+  <view class='mine-right'>
+    <text class='content'>我的收藏</text>
+  </view>
+  <view class='triangle'></view>
+</view>
+
+<view class='mine' catchtap='feedBack'>
+  <view class='mine-left'>
+    <image src='/images/yijianfankui.png' class='mineicon'></image>
+  </view>
+  <view class='mine-right'>
+    <text class='content'>意见反馈</text>
+  </view>
+  <view class='triangle'></view>
+</view>
+
+<view class='mine' catchtap='yuyue'>
+  <view class='mine-left'>
+    <image src='/images/wodeyuyue.png' class='mineicon'></image>
+  </view>
+  <view class='mine-right'>
+    <text class='content'>我的预约</text>
+  </view>
+  <view class='triangle'></view>
+</view>
+
+ <view class='mine' catchtap='info'>
+  <view class='mine-left'>
+    <image src='/images/wodeziliao.png' class='mineicon'></image>
+  </view>
+  <view class='mine-right'>
+    <text class='content'>我的资料</text>
+  </view>
+  <view class='triangle'></view>
+</view> 
+
+<button class='contact' open-type='contact' session-from='weapp' hover-class='none'>
+  <icon class='iconfont icon-kefu'></icon>
+</button>

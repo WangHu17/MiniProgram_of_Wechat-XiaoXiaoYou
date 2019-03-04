@@ -1,0 +1,98 @@
+<form bindsubmit='bindFormSubmit'>
+<view class='YY'>
+  <view class='view0'>
+    <image class='tp' src='/images/21.jpg'></image>
+  </view>
+  <view class='view1'>
+
+      <view class='bk'>
+        <icon class='iconfont icon-ren'></icon>
+        <text class='name'>我的名字</text>
+        <input class='tisi' type='text' name='leader_name' placeholder='真实姓名'></input>
+      </view>
+
+       <view class='bk'>
+        <icon class='iconfont icon-sex'></icon>
+        <text class='sex'>性别</text>
+        <radio-group class='xx' bindchange="usersex">
+        <radio  value='1'>男</radio>  
+        <radio  class='nv' value='0'>女</radio>   
+        </radio-group>
+      </view> 
+
+       <view class='bk' catchtap='selectschool'>
+        <icon class='iconfont icon-school'></icon>
+        <text class='sex'>学校</text>
+        <text  class='tisi1 sc'>{{user_school}}</text>
+      </view> 
+
+      <view class='bk'>
+        <icon class='iconfont icon-xuehao'></icon>
+        <text class='sex'>QQ</text>
+        <input class='tisi1' type='number' name='qq' placeholder='请输入QQ号'></input>
+      </view>
+
+      <view class='bk'>
+        <icon class='iconfont icon-ID'></icon>
+        <text class='sex'>学号</text>
+        <input class='tisi1' type='number' name='studentId' placeholder='请输入学号'></input>
+      </view>
+
+      <view class='bk'>
+        <icon class='iconfont icon-dianhua1'></icon>
+        <text class='phone'>联系电话</text>
+        <input class='tisi' type='number' name='phonenumber' maxlength='11' placeholder='请输入11位的电话号码'></input>
+      </view>   
+
+      <view class='bk'>
+        <icon class='iconfont icon-shenfenzheng'></icon>
+        <text class='phone'>身份证号</text>
+        <input class='tisi' type='idcard' name='idcard' maxlength='18' placeholder='请输入18位身份证号码'></input>
+      </view>   
+
+      <view class='bk' bindtap='actIntroduce1'>
+        <icon class='iconfont icon-beizhu'></icon>
+        <text class='phone'>备注信息</text>
+        <view class="triangle {{introduce1 ? 'active-intro' : ''}}"></view>
+      </view>
+
+      <view class="{{introduce1 ? 'introduce-show' : 'introduce-none'}}">
+        <view class='introduce-content'>
+          <textarea name="memo" class='text-introduce' placeholder='请输入备注信息' adjust-position>
+          </textarea>
+        </view>
+      </view>
+      
+      
+  </view>
+
+  <button class='btn' hover-class='button-hover' form-type='submit'>
+    <text class='yy'>完善资料</text>
+  </button>
+
+  <icon class='iconfont icon-zhuyi'></icon>
+  <text class='zhu'>注:请正确填写资料</text>
+</view>
+
+</form>
+
+
+
+
+
+<view class='container' wx:if="{{loading}}">
+  <view class="sk-circle">
+    <view class="sk-circle1 sk-child"></view>
+    <view class="sk-circle2 sk-child"></view>
+    <view class="sk-circle3 sk-child"></view>
+    <view class="sk-circle4 sk-child"></view>
+    <view class="sk-circle5 sk-child"></view>
+    <view class="sk-circle6 sk-child"></view>
+    <view class="sk-circle7 sk-child"></view>
+    <view class="sk-circle8 sk-child"></view>
+    <view class="sk-circle9 sk-child"></view>
+    <view class="sk-circle10 sk-child"></view>
+    <view class="sk-circle11 sk-child"></view>
+    <view class="sk-circle12 sk-child"></view>
+  </view>
+</view>

@@ -1,0 +1,31 @@
+<!--pages/schoolList/schoolList.wxml-->
+<view class='choose_school_box'>
+  <view class="help-text">
+    <text>请选择学校</text>
+  </view>
+  <view class="input-cell">
+    <view class="input-cell-hd">
+      <text>省份</text>
+    </view>
+    <view class="input-cell-bd">
+      <picker bindchange="bindProvinceChange" class="input-box" value="{{province_index}}" range="{{province}}">
+        <text wx:if="{{!seleted1}}">请选择省份</text>
+        <text wx:else>{{province[province_index]}}</text>
+      </picker>
+    </view>
+  </view>
+  <view class="spacing"></view>
+  <view class="input-cell">
+    <view class="input-cell-hd">
+      <text>学校</text>
+    </view>
+    <view class="input-cell-bd">
+      <picker bindchange="bindSchoolChange" class="input-box" value="{{school_index}}" range-key="name" range='{{schools}}'>
+        <text wx:if="{{!selected2}}">请选择学校</text>
+        <text wx:else>{{schools[school_index].name}}</text>
+      </picker>
+    </view>
+  </view>
+  <view class="spacing"></view>
+ <button class='sure' bindtap='bindSure'>确定</button>
+</view>

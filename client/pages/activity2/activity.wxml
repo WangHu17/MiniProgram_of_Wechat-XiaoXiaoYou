@@ -1,0 +1,43 @@
+<view class='view0' >
+  <image class='tp1' src='{{activityList[activityId].activity_picture}}'></image>
+  
+  <view class='view1'>
+    <icon class='iconfont icon-huodong'></icon>
+    <text class='text1'>活动信息</text>
+    <text class='text2'>活动名称：{{activityList[activityId].activity_name}}</text>
+    <text class='text3'>活动特色：</text>
+    <view class='view2'>
+      <text class='text4'>{{activityList[activityId].activity_ins}}</text>
+    </view>
+    <icon class='iconfont icon-shape_route'></icon>
+    <view class='view3'> 
+      <text>行程介绍\n</text>
+      <text class='text5'>时间：{{activityList[activityId].activity_time}}
+地点：{{activityList[activityId].activity_place}}
+      </text>
+    </view>
+  </view>
+
+</view>
+
+
+
+
+
+
+<view class='container' wx:if="{{loading}}">
+  <view class="sk-circle">
+    <view class="sk-circle1 sk-child"></view>
+    <view class="sk-circle2 sk-child"></view>
+    <view class="sk-circle3 sk-child"></view>
+    <view class="sk-circle4 sk-child"></view>
+    <view class="sk-circle5 sk-child"></view>
+    <view class="sk-circle6 sk-child"></view>
+    <view class="sk-circle7 sk-child"></view>
+    <view class="sk-circle8 sk-child"></view>
+    <view class="sk-circle9 sk-child"></view>
+    <view class="sk-circle10 sk-child"></view>
+    <view class="sk-circle11 sk-child"></view>
+    <view class="sk-circle12 sk-child"></view>
+  </view>
+</view>

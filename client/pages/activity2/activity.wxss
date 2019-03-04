@@ -1,0 +1,61 @@
+@import "/pages/iconfont/iconfont.wxss";
+.icon-huodong{
+  position: absolute;
+  left: 1%;
+}
+.icon-shape_route{
+  position: absolute;
+  top: 47vh;
+  left: 1%;
+}
+.tp1{
+  width: 94%;
+  height: 25vh;
+  margin-left: 3%;
+}
+.view0{
+  height: 100vh;
+}
+.view1{
+  width: 90%;
+  margin-top: 30rpx;
+  margin-left: 5%;
+  position: relative;
+}
+.view2{
+  width: 65%;
+  height: 35vh;
+  position: absolute;
+  top: 11vh;
+  left: 33%;
+}
+.view3{
+  width: 80%;
+  height: 15vh;
+  position: absolute;
+  top: 47.5vh;
+  left: 10%;
+}
+.text1{
+  position: absolute;
+  top: 10rpx;
+  left: 10%;
+}
+.text2{
+  font-size: 30rpx;
+  position: absolute;
+  top: 80rpx;
+  left: 10%; 
+}
+.text3{
+  font-size: 30rpx;
+  position: absolute;
+  top: 140rpx;
+  left: 10%; 
+}
+.text4{
+  font-size: 24rpx;
+}
+.text5{
+  font-size: 30rpx;
+}

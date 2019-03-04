@@ -1,0 +1,70 @@
+<!--pages/act3/act3.wxml-->
+
+<view class='selecttime'>
+  <text class='content-time'>选择活动时间</text>
+</view>
+
+<form bindsubmit='bindFormSubmit'>
+  <view class='content'>
+    <view class='input'>
+      <view class='title'>
+        <icon class='iconfont icon-shijian1 iconstyle'></icon>
+        <text>开始时间</text>
+        <view class='start-date'>
+          <picker name="activity_start_date" mode="date" value='' bindchange='bindDateChange'>
+            {{startDate}}
+          </picker>
+        </view>
+        <view class='start-time'>
+          <picker name="activity_start_time" mode="time" bindchange='bindTimeChange'>
+            {{startTime}}
+          </picker>
+        </view>
+      </view>
+      <view class='title'>
+        <icon class='iconfont icon-shijian1 iconstyle'></icon>
+        <text>结束时间</text>
+        <view class='start-date'>
+          <picker name="activity_end_date" mode="date" value='' bindchange='bindDateChange2'>
+            {{endDate}}
+          </picker>
+        </view>
+        <view class='start-time'>
+          <picker name="activity_end_time" mode="time" bindchange='bindTimeChange2'>
+            {{endTime}}
+          </picker>
+        </view>
+
+      </view>
+      <view class='title'>
+        <icon class='iconfont icon-dianhua iconstyle'></icon>
+        <text>联系电话</text>
+        <view class='act-input'>
+          <input name="user_phoneNumber" type='number' placeholder='不超过11位' maxlength='11' minlength="11"></input>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button class='submit_activity' form-type='submit'>下一步</button>
+</form>
+
+
+
+
+
+<view class='container' wx:if="{{loading}}">
+  <view class="sk-circle">
+    <view class="sk-circle1 sk-child"></view>
+    <view class="sk-circle2 sk-child"></view>
+    <view class="sk-circle3 sk-child"></view>
+    <view class="sk-circle4 sk-child"></view>
+    <view class="sk-circle5 sk-child"></view>
+    <view class="sk-circle6 sk-child"></view>
+    <view class="sk-circle7 sk-child"></view>
+    <view class="sk-circle8 sk-child"></view>
+    <view class="sk-circle9 sk-child"></view>
+    <view class="sk-circle10 sk-child"></view>
+    <view class="sk-circle11 sk-child"></view>
+    <view class="sk-circle12 sk-child"></view>
+  </view>
+</view>

@@ -1,0 +1,44 @@
+<view class='picture'>
+  <image src='{{avatarUrl}}' class='tx'></image>
+  <view class='name_box'>
+    <text class='name'>{{userInfo.name}}</text>
+  </view>
+</view>
+<view class='box'>
+  <text class='words'>性别:</text>
+  <text class='information'>{{userInfo.gender == 1 ? "男" : "女"}}</text>
+</view>
+<view class='box'>
+  <text class='words'>手机:</text>
+  <text class='information'>{{userInfo.phonenumber}}</text>
+</view>
+<view class='box'>
+  <text class='words'>QQ:</text>
+  <text class='qq'>{{userInfo.QQ}}</text>
+</view>
+<view class='box'>
+  <text class='words'>学校:</text>
+  <text class='information'>{{userInfo.school}}</text>
+</view>
+<view class='box'>
+  <text class='words'>备注:</text>
+  <text class='information'>{{userInfo.memo}}</text>
+</view>
+
+
+<view class='container' wx:if="{{loading}}">
+  <view class="sk-circle">
+    <view class="sk-circle1 sk-child"></view>
+    <view class="sk-circle2 sk-child"></view>
+    <view class="sk-circle3 sk-child"></view>
+    <view class="sk-circle4 sk-child"></view>
+    <view class="sk-circle5 sk-child"></view>
+    <view class="sk-circle6 sk-child"></view>
+    <view class="sk-circle7 sk-child"></view>
+    <view class="sk-circle8 sk-child"></view>
+    <view class="sk-circle9 sk-child"></view>
+    <view class="sk-circle10 sk-child"></view>
+    <view class="sk-circle11 sk-child"></view>
+    <view class="sk-circle12 sk-child"></view>
+  </view>
+</view>

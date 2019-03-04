@@ -1,0 +1,14 @@
+/* pages/yuyue/yuyue.wxss */
+@import "/pages/icon/iconfont.wxss";
+@import "/pages/index/index.wxss";
+.save {
+  width: 100%;
+  height: 800rpx;
+  display: block;
+}
+.save2 {
+  width: 100%;
+  height: 534rpx;
+  background: white;
+  display: block;
+}

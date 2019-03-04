@@ -1,0 +1,7 @@
+/* pages/setting/setting.wxss */
+
+@import "/pages/icon/iconfont.wxss";
+@import "/pages/history/history.wxss";
+
+
+

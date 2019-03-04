@@ -1,0 +1,17 @@
+<!--pages/more2/more2.wxml-->
+<view class='recommend'>
+  <block wx:for="{{recommend}}" wx:key="">
+    <view class='hot-recommend' data-act-id='{{item.activity_id}}' catchtap='recommend'>
+      <image src='{{item.imgUrl}}' class='recommend_hot_img'></image>
+      <view class='content'>
+        <text>{{item.activity_title}}</text>
+      </view>
+      <view class='district'>
+        <text class='where'>{{item.user_school}}</text>
+      </view>
+      <view >
+        <text class='where'>{{item.activity_start_date}}</text>
+      </view>
+    </view>
+  </block>
+</view>

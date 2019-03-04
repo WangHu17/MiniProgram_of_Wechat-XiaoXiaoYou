@@ -1,0 +1,2 @@
+/* pages/userinfo/userinfo.wxss */
+@import "/pages/userdaoyouinfo/userinfo.wxss";

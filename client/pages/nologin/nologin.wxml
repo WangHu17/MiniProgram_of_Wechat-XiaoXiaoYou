@@ -1,0 +1,10 @@
+<!--pages/nologin/nologin.wxml-->
+<view class='xiaoyuan'>
+  <image src='/images/nologin.png' class='img'></image>
+</view>
+<view class='login'>
+  <text class='content'>请完成授权登录,以免影响正常使用</text>
+  <button class='login-bottom' bindtap='login'>
+    我要授权登录
+  </button>
+</view>

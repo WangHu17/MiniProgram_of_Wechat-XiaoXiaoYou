@@ -1,0 +1,26 @@
+<view class='picture'>
+  <image src='{{joined.userInfo.avatarUrl}}' class='tx'></image>
+  <view class='name_box'>
+    <text class='name'>{{joined.name}}</text>
+  </view>
+</view>
+<view class='box'>
+  <text class='words'>性别:</text>
+  <text class='information'>{{joined.gender ? "男" : "女"}}</text>
+</view>
+<view class='box'>
+  <text class='words'>手机:</text>
+  <text class='information'>{{joined.phonenumber}}</text>
+</view>
+<view class='box'>
+  <text class='words'>学校:</text>
+  <text class='information'>{{joined.school}}</text>
+</view>
+<view class='box'>
+  <text class='words qq'>QQ:</text>
+  <text class='information'>{{joined.QQ}}</text>
+</view>
+<view class='box'>
+  <text class='words'>备注:</text>
+  <text class='information'>{{joined.memo}}</text>
+</view>

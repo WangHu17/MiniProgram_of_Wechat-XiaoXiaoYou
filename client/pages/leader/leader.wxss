@@ -1,0 +1,124 @@
+@import "/pages/iconfont/iconfont.wxss";
+@import "/pages/icon/iconfont.wxss";
+.icon-zhuyi{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 32%;
+}
+.YY{
+  width: 100%;
+  height: 100vh;
+  background: #F5F5F5;
+}
+.view0{
+  width: 100%;
+}
+.tp{
+  width: 100%;
+  height: 300rpx;
+}
+.view1{
+  width: 94%;
+  background-color: white;
+  margin-top: 30rpx;
+  margin-left: 3%;
+  border-radius: 10rpx;
+}
+.bk{
+  width: 90%;
+  height: 100rpx;
+  border-bottom: 4rpx solid #F5F5F5;
+  position: relative;
+  left: 5%;
+  line-height: 100rpx;
+}
+.bk:hover {
+  border-bottom: 4rpx solid #ff6f4c;
+}
+.tisi{
+  display: inline-flex;
+  font-size: 30rpx;
+  margin-left: 5%;
+}
+.tisi1{
+  display: inline-flex;
+  font-size: 30rpx;
+  margin-left: 10%;
+}
+.name{
+  font-size: 30rpx;
+  margin-left: 5%;
+}
+.sex{
+  font-size: 30rpx;
+  margin-left: 10%;
+}
+.xx{
+  font-size: 30rpx;
+  display: inline-flex;
+  margin-left: 10%;
+  zoom: 75%;
+}
+.nv{
+  margin-left: 50rpx;
+}
+.phone{
+  font-size: 30rpx;
+  margin-left: 5%;
+}
+.btn{
+  width: 65%;
+  height: 70rpx;
+  line-height: 65rpx;
+  margin-top: 66rpx;
+  margin-left: 50%;
+  transform: translate(-50%);
+  border-radius: 36rpx;
+  background-color: #FF6F4C;
+}
+.button-hover{
+  background-color: red;
+}
+.yy{
+  font-size: 30rpx;
+  color: white;
+}
+.zhu{
+  color: gray;
+  font-size: 26rpx;
+  margin-left: 2%;
+  transform: translate(-50%);
+}
+.triangle {
+  width: 20rpx;
+  height: 20rpx;
+  background: transparent;
+  border-top:4rpx solid #C1C1C1; 
+  border-right:4rpx solid #C1C1C1; 
+  transform:rotate(45deg) translate(-50%);
+  position: absolute;
+  top: 46rpx;
+  right: 5%;
+}
+.active-intro {
+  transform: rotate(-225deg) translate(-50%);
+}
+
+.introduce-show {
+  display: block;
+}
+.introduce-none {
+  display: none;
+}
+.introduce-content {
+  margin: 0 5%;
+  width: 93%;
+  height: 200rpx;
+}
+.text-introduce {
+  width: 93%;
+  font-size: 30rpx;
+}
+.sc {
+  color: #a9a9a9;
+}

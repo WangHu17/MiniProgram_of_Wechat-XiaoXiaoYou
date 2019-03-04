@@ -1,0 +1,147 @@
+<!--pages/act_detail/act_detail.wxml-->
+
+<!-- 头部图片 -->
+<view class='act-img'>
+  <image src='{{activityList.imgUrl}}' class='act-img-size'></image>
+</view>
+<!-- 头部图片结束 -->
+
+<!-- 活动标题 -->
+
+<view class='title'>
+  <view class='act-time-area'>
+    <view class='time-icon'>
+      <icon class='iconfont icon-zhekou titleicon'></icon>
+    </view>
+    <view class='time'>
+      <text class='area'>{{activityList.activity_title}}</text>
+    </view>
+  </view>
+</view>
+
+<!-- 活动标题结束 -->
+
+<!-- 活动时间 -->
+<view class='title'>
+  <view class='act-time-area'>
+    <view class='time-icon'>
+      <icon class='iconfont icon-shijian1 titleicon'></icon>
+    </view>
+    <view class='time'>
+      <text class='start-date'>{{activityList.activity_start_date}}</text>
+      <text class='start-time'>{{activityList.activity_start_time}}</text>
+      <text class='space'>-</text>
+      <text class='end-date'>{{activityList.activity_end_date}}</text>
+      <text class='end-time'>{{activityList.activity_end_time}}</text>
+    </view>
+  </view>
+</view>
+<!-- 活动时间结束 -->
+
+<!-- 活动地点 -->
+<view class='title'>
+  <view class='act-time-area'>
+    <view class='time-icon'>
+      <icon class='iconfont icon-ditu titleicon'></icon>
+    </view>
+    <view class='time'>
+      <text class='area'>{{activityList.activity_area}}</text>
+    </view>
+  </view>
+</view>
+
+<view class='title'>
+  <view class='act-time-area'>
+    <view class='time-icon'>
+      <icon class='iconfont icon-huodongfeiyong titleicon'></icon>
+    </view>
+    <view class='time'>
+      <text class='area'>{{activityList.activity_leader_money}}</text>
+      <icon class='iconfont icon-newbimoney titleicon'></icon>
+      <text>(带领费用)</text>
+    </view>
+  </view>
+</view>
+
+<view class='title'>
+  <view class='act-time-area'>
+    <view class='time-icon'>
+      <icon class='iconfont icon-huodongfeiyong titleicon'></icon>
+    </view>
+    <view class='time'>
+      <text class='area'>{{activityList.activity_money}}</text>
+      <icon class='iconfont icon-newbimoney titleicon'></icon>
+      <text>(活动预算)</text>
+    </view>
+  </view>
+</view>
+
+<!-- 活动地点结束 -->
+
+<!-- 活动报名 -->
+<view class='tabbar'>
+  <view class='tabbaricon' catchtap='index'>
+    <icon class='iconfont icon-yemian bottomicon'></icon>
+    <text class='bottomtext'>首页</text>
+  </view>
+  <view class='tabbaricon' catchtap='toggleFav'>
+    <icon class="iconfont titleicon {{ favFlag ? 'icon-shoucang2 ' : 'icon-shoucang3' }} bottomicon"></icon>
+    <text class='bottomtext'>收藏</text>
+  </view>
+  <view class='tabbaricon'>
+    <button class='tabbaricon2' hover-class='none' open-type='share'>
+      <icon class='iconfont icon-fenxiang bottomicon'></icon>
+      <text class='bottomshare'>分享</text>
+    </button>
+  </view>
+  <view class='submit' catchtap='YKxx'>
+    <text>{{isguide ? "查看已报名" : "立即预约"}}</text>
+  </view>
+</view>
+
+
+<!-- 活动报名结束 -->
+
+<!-- 活动详情 -->
+<view class='title'>
+  <view class='act-detail'>
+    <view class='act-detail-title'>
+      <text>活动详情</text>
+    </view>
+    <view class='act-detail-content'>
+      <text>{{activityList.activity_introduce}}</text>
+    </view>
+  </view>
+</view>
+<!-- 活动详情结束 -->
+
+<!-- 查看导游信息 -->
+<view class='guide-size' catchtap='lookguide'>
+  <view class='guide'>
+    <text wx:if="{{isguide}}">{{content1}}</text>
+    <text wx:else>{{content2}}</text>
+    <icon class='iconfont icon-arrow-down first'></icon>
+    <icon class='iconfont icon-arrow-down second'></icon>
+  </view>
+</view>
+
+
+<view class='container' wx:if="{{loading}}">
+  <view class="sk-circle">
+    <view class="sk-circle1 sk-child"></view>
+    <view class="sk-circle2 sk-child"></view>
+    <view class="sk-circle3 sk-child"></view>
+    <view class="sk-circle4 sk-child"></view>
+    <view class="sk-circle5 sk-child"></view>
+    <view class="sk-circle6 sk-child"></view>
+    <view class="sk-circle7 sk-child"></view>
+    <view class="sk-circle8 sk-child"></view>
+    <view class="sk-circle9 sk-child"></view>
+    <view class="sk-circle10 sk-child"></view>
+    <view class="sk-circle11 sk-child"></view>
+    <view class="sk-circle12 sk-child"></view>
+  </view>
+</view>
+
+
+

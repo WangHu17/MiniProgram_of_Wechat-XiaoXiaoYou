@@ -1,0 +1,24 @@
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20rpx 0;
+}
+
+.img{
+  display: block;
+  border-radius: 50%;
+  height: 435rpx;
+  width: 500rpx;
+  margin: 20rpx auto;
+}
+
+
+.content {
+  margin-bottom: 50rpx;
+}
+.con {
+  margin-bottom: 20rpx;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+}

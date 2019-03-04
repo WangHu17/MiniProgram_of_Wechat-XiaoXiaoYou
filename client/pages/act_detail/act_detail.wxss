@@ -1,0 +1,239 @@
+/* pages/act_detail/act_detail.wxss */
+@import "../icon/iconfont.wxss";
+
+page {
+  background: white;
+}
+
+/* 头部图片 */
+
+.act-img {
+  width: 100%;
+  height: 420rpx;
+}
+
+
+.act-img-size {
+  width: 100%;
+  height: 420rpx;
+  display: block;
+}
+
+/* 头部图片结束 */
+
+/* 活动标题 */
+
+.title {
+  background: white;
+}
+
+.act-title {
+  width: 700rpx;
+  height: 100rpx;
+  margin: 0 25rpx;
+}
+
+.act-title-content {
+  width: 700rpx;
+  height: 100rpx;
+}
+
+
+
+.titleicon {
+  margin-right: 10rpx;
+}
+/* 活动标题结束 */
+
+.act-time-area {
+  width: 700rpx;
+  height: 100rpx;
+  margin: 0 25rpx;
+  border-top: 5rpx solid #f7f7f7;
+}
+
+.act-time-area .time-icon {
+  height: 100rpx;
+  width: 50rpx;
+  float: left;
+  line-height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.act-time-area .time {
+  height: 100rpx;
+  float: left;
+  width: 600rpx;
+  font-size: 35rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  line-height: 100rpx;
+}
+
+.start-date, .end-date {
+  margin-right: 10rpx;
+}
+
+.area {
+  height: 100rpx;
+  float: left;
+  font-size: 35rpx;
+  line-height: 100rpx;
+}
+
+/* 活动地点时间结束 */
+
+.tabbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  z-index: 999;
+}
+
+.tabbaricon {
+  height: 100rpx;
+  width: 150rpx;
+  float: left;
+  border-right: 5rpx solid #f7f7f7;
+  border-top: 5rpx solid #f7f7f7;
+  background: white;
+  position: relative;
+  z-index: 99;
+}
+
+.submit {
+  height: 100rpx;
+  width: 289rpx;
+  float: left;
+  background: #ff6f4c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  line-height: 100rpx;
+  color: white;
+}
+
+.bottomicon {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 30rpx;
+}
+.icon-shoucang3 {
+  font-size: 40rpx;
+}
+.icon-yemian {
+  font-size: 35rpx;
+  color: #ff6f4c;
+}
+.bottomtext {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, 2%);
+  font-size: 30rpx;
+}
+
+button {
+  background: white;
+}
+
+button::after {
+  border: none;
+}
+
+.tabbaricon2 {
+  height: 100rpx;
+  width: 150rpx;
+  float: left;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.bottomshare {
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 30rpx;
+}
+.icon-newbimoney {
+  margin-left: 10rpx;
+}
+
+/* 活动报名结束 */
+
+/* 活动详情 */
+
+.act-detail {
+  width: 100%;
+  border-top: 30rpx solid #f7f7f7;
+}
+
+.act-detail-title {
+  width: 700rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-left: 25rpx;
+  border-bottom: 5rpx solid #f7f7f7;
+}
+
+.act-detail-content {
+  margin-top:10rpx;
+  padding-bottom: 20rpx;
+  width: 700rpx;
+  margin-left: 25rpx;
+  color: #a9a9a9;
+  border-bottom: 5rpx solid #f7f7f7;
+}
+.guide-size {
+  width: 100%;
+  height: 130rpx;
+  position: relative;
+  background: white;
+  margin-bottom: 100rpx;
+}
+.guide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.first {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%,-60%);
+  font-size: 50rpx;
+  color: #ff6f4c;
+}
+.second {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%,-80%);
+  font-size: 50rpx;
+  color: #ff6f4c;
+}
+
+.imgiconsize {
+  width: 50rpx;
+  height: 50rpx;
+}
+.titleicon {
+  color: #ff6f4c;
+}
+.icon-shoucang2 {
+  font-size: 40rpx;
+}
+.icon-fenxiang {
+  color: #ff6f4c;
+}
+.icon-huodongxiangqing {
+  color: #ff6f4c;
+}

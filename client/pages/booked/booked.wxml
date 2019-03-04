@@ -1,0 +1,27 @@
+<view class='content'>
+  <block wx:for="{{joined}}" wx:key="" >
+    <view class='booked' bindtap='userInfodetail' data-index-id='{{index}}'>
+      <image src='{{item.userInfo.avatarUrl}}' class='tx'></image>
+      <text class='booked_name'>{{item.name}}</text>
+      <text class='booked_date'>查看资料</text>
+    </view>
+  </block>
+</view>
+
+ 
+<view class='container' wx:if="{{loading}}">
+  <view class="sk-circle">
+    <view class="sk-circle1 sk-child"></view>
+    <view class="sk-circle2 sk-child"></view>
+    <view class="sk-circle3 sk-child"></view>
+    <view class="sk-circle4 sk-child"></view>
+    <view class="sk-circle5 sk-child"></view>
+    <view class="sk-circle6 sk-child"></view>
+    <view class="sk-circle7 sk-child"></view>
+    <view class="sk-circle8 sk-child"></view>
+    <view class="sk-circle9 sk-child"></view>
+    <view class="sk-circle10 sk-child"></view>
+    <view class="sk-circle11 sk-child"></view>
+    <view class="sk-circle12 sk-child"></view>
+  </view>
+</view>

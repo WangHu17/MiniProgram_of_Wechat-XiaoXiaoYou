@@ -1,0 +1,43 @@
+<!--pages/setting/setting.wxml-->
+ <view wx:if="{{haveFav == false}}">
+  <image src='/images/save.jpg' class='save'></image>
+  <view class='save2'></view>
+</view> 
+
+<view wx:else>
+  <view class='recommend'>
+    <block wx:for="{{recommend}}" wx:key="">
+      <view class='hot-recommend' data-act-id='{{item.activity_id}}' catchtap='recommend'>
+        <image src='{{item.imgUrl}}' class='recommend_hot_img'></image>
+        <view class='content'>
+          <text>{{item.activity_title}}</text>
+        </view>
+        <view class='district'>
+          <text class='where'>{{item.user_school}}</text>
+        </view>
+        <view>
+          <text class='where'>{{item.activity_start_date}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+
+
+<view class='container' wx:if="{{loading}}">
+  <view class="sk-circle">
+    <view class="sk-circle1 sk-child"></view>
+    <view class="sk-circle2 sk-child"></view>
+    <view class="sk-circle3 sk-child"></view>
+    <view class="sk-circle4 sk-child"></view>
+    <view class="sk-circle5 sk-child"></view>
+    <view class="sk-circle6 sk-child"></view>
+    <view class="sk-circle7 sk-child"></view>
+    <view class="sk-circle8 sk-child"></view>
+    <view class="sk-circle9 sk-child"></view>
+    <view class="sk-circle10 sk-child"></view>
+    <view class="sk-circle11 sk-child"></view>
+    <view class="sk-circle12 sk-child"></view>
+  </view>
+</view>
